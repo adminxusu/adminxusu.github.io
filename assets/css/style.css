@@ -5304,3 +5304,58 @@ input, textarea {
   border-top-style: dashed;
 }
 /*# sourceMappingURL=style.css.map */
+
+/*****************************
+********** 按钮开始 **********
+*****************************/
+*,*:after,*:before{-webkit-box-sizing:border-box;box-sizing:border-box}
+    /*框属性*/
+.button-anniu {
+	float: center;
+	min-width: 150px;
+	max-width: 250px;
+	display: block;
+	margin: 1em;
+	padding: 1em 2em;
+	border: none;
+	background: 0 0;
+    /*开始文字颜色*/
+	color: rgb(255, 255, 255);
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale
+	}
+.button--text-medium {
+	font-weight: 1000;
+	}
+/*边框圆角*/
+.button--round-l {
+	border-radius: 40px
+	}
+/*边框高度*/
+.button--antiman{background:0 0;border:none;height:60px}
+/*变化后字体与边框颜色同步显示*/
+.button--antiman{-webkit-transition:color .3s;transition:color .3s;-webkit-transition-timing-function:cubic-bezier(.75,0,.125,1);transition-timing-function:cubic-bezier(.75,0,.125,1)}
+.button--antiman>span{padding-left:.35em}
+/*变化后边框显示*/
+.button--antiman::before,
+/*边框变化前后显示*/
+.button--antiman::after{content:'';z-index:-1;border-radius:inherit;pointer-events:none;position:absolute;top:0;left:0;width:100%;height:100%;-webkit-backface-visibility:hidden;-webkit-transition:-webkit-transform .3s,opacity .3s;transition:transform .3s,opacity .3s;-webkit-transition-timing-function:cubic-bezier(.75,0,.125,1);transition-timing-function:cubic-bezier(.75,0,.125,1)}
+.button--antiman::before{border:2px solid #37474f;opacity:0;-webkit-transform:scale3d(1.2,1.2,1);transform:scale3d(1.2,1.2,1)}
+/*变化后边框粗细*/
+.button--antiman::before{border-width:3px}
+/*变化后边框*/
+.button--antiman::before{border-color:#0000009d}
+/*初始化背景*/
+.button--antiman::after{background:#0000009d}
+/*变化后字体*/
+.button--antiman:hover{color:#000000}
+/*变化后边框*/
+.button--antiman:hover::before{opacity:1;-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}
+/*变化后字体*/
+.button--antiman:hover::after{opacity:0;-webkit-transform:scale3d(.8,.8,1);transform:scale3d(.8,.8,1)}
+/*****************************
+********** 按钮结束 **********
+*****************************/
